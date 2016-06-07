@@ -11,20 +11,33 @@ import GoogleMaps
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet weak var mapView: GMSMapView!
+      @IBOutlet weak var mapView: GMSMapView!
+    
+    ////// Google map initialization
+    
+    var locations = [GMSMarker]()
+    
+    lazy var locationManager : CLLocationManager! = {
+        let manager = CLLocationManager()
+        manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        manager.delegate = self
+        let authorizationStatus = CLLocationManager.authorizationStatus()
+        if (authorizationStatus == CLAuthorizationStatus.NotDetermined) {
+            manager.requestWhenInUseAuthorization()
+        } else if (authorizationStatus == CLAuthorizationStatus.AuthorizedWhenInUse) {
+            manager.startUpdatingLocation()
+        }
+        
+        return manager
+    }()
+    
+    //////
+    
     
     override func loadView() {
         super.loadView()
         
-        let locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        let authorizationStatus = CLLocationManager.authorizationStatus()
-        if (authorizationStatus == CLAuthorizationStatus.NotDetermined) {
-            locationManager.requestWhenInUseAuthorization()
-        } else if (authorizationStatus == CLAuthorizationStatus.AuthorizedWhenInUse) {
-            locationManager.startUpdatingLocation()
-        }
+        self.locationManager.startUpdatingLocation()
     }
     
     override func viewDidLoad() {
@@ -37,8 +50,40 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // MARK: - CLLocationManagerDelegate
+    /*
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        // Add another annotation to the map.
+        let  position = CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude)
+        let annotation = GMSMarker(position: position)//MKPointAnnotation()
+        //annotation.coordinate = newLocation.coordinate
+        annotation.title = "Test Marker"
+        
+        // Also add to our map so we can remove old values later
+        locations.append(annotation)
+        
+        // Remove values if the array is too big
+        while locations.count > 100 {
+            let annotationToRemove = locations.first!
+            locations.removeAtIndex(0)
+            
+            // Also remove from the map
+            mapView.delete(annotationToRemove)
+//            mapView.removeAnnotation(annotationToRemove)
+        }
+        
+        if UIApplication.sharedApplication().applicationState == .Active {
+            //mapView.showAnnotations(locations, animated: true)
+            annotation.map = mapView
+            
+            mapView.settings.myLocationButton = true
+        } else {
+            NSLog("App is backgrounded. New location is %@", newLocation)
+        }
+    }*/
 }
+
 
 extension FirstViewController : CLLocationManagerDelegate {
     
@@ -47,7 +92,14 @@ extension FirstViewController : CLLocationManagerDelegate {
             manager.startUpdatingLocation()
             
             mapView.myLocationEnabled = true
-            mapView.settings.myLocationButton = true
+            //mapView.settings.myLocationButton = true
+            
+            if UIApplication.sharedApplication().applicationState == .Active {
+                mapView.settings.myLocationButton = true
+            } else {
+                print("App is backgrounded. New location is %@", manager.location)
+            }
+
         }
         
         if (status == CLAuthorizationStatus.AuthorizedWhenInUse) {

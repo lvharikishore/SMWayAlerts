@@ -90,8 +90,42 @@
                     <view key="view" contentMode="scaleToFill" id="45o-2v-uqN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tRs-yA-xUU">
+                                <rect key="frame" x="180" y="20" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="c20-g8-gYd"/>
+                                    <constraint firstAttribute="height" constant="128" id="fd6-4D-Zlt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide your registered mobile number to login with." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlC-JC-0XA">
+                                <rect key="frame" x="165" y="219" width="270" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Q1o-yv-7cQ"/>
+                                    <constraint firstAttribute="width" constant="270" id="TJm-UH-jh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHq-Od-DH7">
+                                <rect key="frame" x="279" y="158" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GlC-JC-0XA" firstAttribute="centerX" secondItem="45o-2v-uqN" secondAttribute="centerX" id="0GR-zo-y9G"/>
+                            <constraint firstItem="lHq-Od-DH7" firstAttribute="top" secondItem="tRs-yA-xUU" secondAttribute="bottom" constant="10" id="E27-Ba-dky"/>
+                            <constraint firstItem="lHq-Od-DH7" firstAttribute="centerX" secondItem="45o-2v-uqN" secondAttribute="centerX" id="L0e-hN-dOc"/>
+                            <constraint firstItem="tRs-yA-xUU" firstAttribute="top" secondItem="9dH-we-Ic3" secondAttribute="bottom" id="Vfw-AP-X2I"/>
+                            <constraint firstItem="tRs-yA-xUU" firstAttribute="centerX" secondItem="45o-2v-uqN" secondAttribute="centerX" id="Zrt-xU-coy"/>
+                            <constraint firstItem="GlC-JC-0XA" firstAttribute="top" secondItem="lHq-Od-DH7" secondAttribute="bottom" constant="40" id="hsa-As-7hv"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nF-Oo-Boy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +173,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="640" height="640"/>
         <image name="Player" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>

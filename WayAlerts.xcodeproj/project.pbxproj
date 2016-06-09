@@ -15,6 +15,17 @@
 		774FEBE01D058563005D579F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774FEBDE1D058563005D579F /* LaunchScreen.storyboard */; };
 		774FEBEB1D058563005D579F /* WayAlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBEA1D058563005D579F /* WayAlertsTests.swift */; };
 		774FEBF61D058563005D579F /* WayAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBF51D058563005D579F /* WayAlertsUITests.swift */; };
+		776BDE9E1D0952F200410807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD31D058562005D579F /* AppDelegate.swift */; };
+		776BDE9F1D0952F300410807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD31D058562005D579F /* AppDelegate.swift */; };
+		776BDEA21D09A84D00410807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEA11D09A84D00410807 /* Constants.swift */; };
+		776BDEA31D09A84D00410807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEA11D09A84D00410807 /* Constants.swift */; };
+		776BDEA41D09A84D00410807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEA11D09A84D00410807 /* Constants.swift */; };
+		776BDEAA1D09AC3A00410807 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEA91D09AC3A00410807 /* DataController.swift */; };
+		776BDEAB1D09AC3A00410807 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEA91D09AC3A00410807 /* DataController.swift */; };
+		776BDEAC1D09AC3A00410807 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEA91D09AC3A00410807 /* DataController.swift */; };
+		776BDEAE1D09ACA800410807 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEAD1D09ACA800410807 /* NetworkController.swift */; };
+		776BDEAF1D09ACA800410807 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEAD1D09ACA800410807 /* NetworkController.swift */; };
+		776BDEB01D09ACA800410807 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BDEAD1D09ACA800410807 /* NetworkController.swift */; };
 		77807D771D081FC400A9067C /* AlertBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77807D761D081FC400A9067C /* AlertBox.swift */; };
 		77807D781D081FC400A9067C /* AlertBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77807D761D081FC400A9067C /* AlertBox.swift */; };
 		77807D791D081FC400A9067C /* AlertBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77807D761D081FC400A9067C /* AlertBox.swift */; };
@@ -61,6 +72,9 @@
 		774FEBF11D058563005D579F /* WayAlertsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WayAlertsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FEBF51D058563005D579F /* WayAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayAlertsUITests.swift; sourceTree = "<group>"; };
 		774FEBF71D058563005D579F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776BDEA11D09A84D00410807 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Constants/Constants.swift; sourceTree = "<group>"; };
+		776BDEA91D09AC3A00410807 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = Data/DataController.swift; sourceTree = "<group>"; };
+		776BDEAD1D09ACA800410807 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Network/NetworkController.swift; sourceTree = "<group>"; };
 		77807D761D081FC400A9067C /* AlertBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertBox.swift; path = AlertBox/AlertBox.swift; sourceTree = SOURCE_ROOT; };
 		77807D7C1D083E8300A9067C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +130,9 @@
 		774FEBD21D058562005D579F /* WayAlerts */ = {
 			isa = PBXGroup;
 			children = (
+				776BDEA81D09AB6A00410807 /* Data */,
+				776BDEA71D09AA6C00410807 /* WANetwork */,
+				776BDEA01D09A77800410807 /* Constants */,
 				77807D751D0803ED00A9067C /* AlertBox */,
 				774FEBD31D058562005D579F /* AppDelegate.swift */,
 				774FEBD51D058562005D579F /* FirstViewController.swift */,
@@ -145,6 +162,30 @@
 				774FEBF71D058563005D579F /* Info.plist */,
 			);
 			path = WayAlertsUITests;
+			sourceTree = "<group>";
+		};
+		776BDEA01D09A77800410807 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				776BDEA11D09A84D00410807 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		776BDEA71D09AA6C00410807 /* WANetwork */ = {
+			isa = PBXGroup;
+			children = (
+				776BDEAD1D09ACA800410807 /* NetworkController.swift */,
+			);
+			name = WANetwork;
+			sourceTree = "<group>";
+		};
+		776BDEA81D09AB6A00410807 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				776BDEA91D09AC3A00410807 /* DataController.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		77807D751D0803ED00A9067C /* AlertBox */ = {
@@ -359,11 +400,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BDEAE1D09ACA800410807 /* NetworkController.swift in Sources */,
+				776BDEAA1D09AC3A00410807 /* DataController.swift in Sources */,
 				774FEBD81D058562005D579F /* SecondViewController.swift in Sources */,
 				774FEBD41D058562005D579F /* AppDelegate.swift in Sources */,
 				77807D771D081FC400A9067C /* AlertBox.swift in Sources */,
 				77807D7D1D083E8300A9067C /* LoginViewController.swift in Sources */,
 				774FEBD61D058562005D579F /* FirstViewController.swift in Sources */,
+				776BDEA21D09A84D00410807 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,10 +415,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BDEAF1D09ACA800410807 /* NetworkController.swift in Sources */,
+				776BDEAB1D09AC3A00410807 /* DataController.swift in Sources */,
 				77807D7E1D083E8300A9067C /* LoginViewController.swift in Sources */,
 				77807D7A1D08271100A9067C /* FirstViewController.swift in Sources */,
 				77807D781D081FC400A9067C /* AlertBox.swift in Sources */,
+				776BDE9E1D0952F200410807 /* AppDelegate.swift in Sources */,
 				774FEBEB1D058563005D579F /* WayAlertsTests.swift in Sources */,
+				776BDEA31D09A84D00410807 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,10 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BDEB01D09ACA800410807 /* NetworkController.swift in Sources */,
+				776BDEAC1D09AC3A00410807 /* DataController.swift in Sources */,
 				77807D7F1D083E8300A9067C /* LoginViewController.swift in Sources */,
 				77807D7B1D08271200A9067C /* FirstViewController.swift in Sources */,
 				77807D791D081FC400A9067C /* AlertBox.swift in Sources */,
+				776BDE9F1D0952F300410807 /* AppDelegate.swift in Sources */,
 				774FEBF61D058563005D579F /* WayAlertsUITests.swift in Sources */,
+				776BDEA41D09A84D00410807 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

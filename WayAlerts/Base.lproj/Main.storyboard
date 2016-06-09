@@ -106,13 +106,13 @@
                                     <constraint firstAttribute="width" constant="270" id="TJm-UH-jh2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHq-Od-DH7">
                                 <rect key="frame" x="279" y="158" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here to Regester now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9G-21-5wu">
@@ -143,7 +143,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-5l-cBB">
-                                <rect key="frame" x="31" y="262" width="34" height="21"/>
+                                <rect key="frame" x="31" y="255" width="34" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Sli-bd-3uj"/>
                                     <constraint firstAttribute="width" constant="34" id="uUq-uX-6wi"/>
@@ -159,7 +159,7 @@
                                     <constraint firstAttribute="width" constant="500" id="nXu-B0-c31"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="nXu-B0-c31"/>
@@ -193,12 +193,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="9Ax-hc-d9x" secondAttribute="trailing" constant="20" id="dau-LJ-rSq"/>
                             <constraint firstItem="h9G-21-5wu" firstAttribute="centerX" secondItem="45o-2v-uqN" secondAttribute="centerX" id="g91-mf-CK6"/>
                             <constraint firstItem="FH8-cm-kVG" firstAttribute="leading" secondItem="45o-2v-uqN" secondAttribute="leading" constant="30" id="hD1-Go-ktJ"/>
+                            <constraint firstItem="cvJ-5l-cBB" firstAttribute="top" secondItem="9dH-we-Ic3" secondAttribute="bottom" constant="235" id="hoN-jb-a1c"/>
                             <constraint firstItem="GlC-JC-0XA" firstAttribute="top" secondItem="lHq-Od-DH7" secondAttribute="bottom" constant="15" id="hsa-As-7hv"/>
                             <constraint firstItem="h9G-21-5wu" firstAttribute="top" secondItem="Va5-nV-lGZ" secondAttribute="bottom" constant="8" id="lVW-OE-GN9"/>
                             <constraint firstItem="9Ax-hc-d9x" firstAttribute="top" secondItem="GlC-JC-0XA" secondAttribute="bottom" constant="10" id="nhm-im-xDv"/>
                             <constraint firstItem="FH8-cm-kVG" firstAttribute="top" secondItem="9Ax-hc-d9x" secondAttribute="bottom" constant="20" id="rnp-Oj-14A"/>
                             <constraint firstItem="kYf-ph-2w0" firstAttribute="top" secondItem="h9G-21-5wu" secondAttribute="bottom" constant="20" id="v3n-JV-Rqk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="314-ae-f9X"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>

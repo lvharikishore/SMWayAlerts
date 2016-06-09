@@ -14,12 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    let googleMapsApiKey = "AIzaSyBsyZy8VXt_CJPi_zDrgRq1aOx0ITWvghM"
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        GMSServices.provideAPIKey(googleMapsApiKey)
+        GMSServices.provideAPIKey(Constants.googleMapsApiKey)
         
 //        let request = NSMutableURLRequest(URL: NSURL(string: "http://syncminds.ddns.net/wayalerts_d_sm/api/requestprocessor/requestProcessing")!)
 //        let session = NSURLSession.sharedSession()
@@ -62,7 +60,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    var shouldSupportAllOrientation = false
+    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
+        
+        if (shouldSupportAllOrientation == true){
+            return UIInterfaceOrientationMask.All
+        }
+        
+        return UIInterfaceOrientationMask.Portrait
+    }
 }
 

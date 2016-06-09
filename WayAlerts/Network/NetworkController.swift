@@ -10,4 +10,5 @@ import UIKit
 
 class NetworkController: NSObject {
 
+    static let sharedInstance = NetworkController()
 }

@@ -18,24 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         GMSServices.provideAPIKey(Constants.googleMapsApiKey)
-        
-//        let request = NSMutableURLRequest(URL: NSURL(string: "http://syncminds.ddns.net/wayalerts_d_sm/api/requestprocessor/requestProcessing")!)
-//        let session = NSURLSession.sharedSession()
-//        request.HTTPMethod = "POST"
-//        
-//        let params = ["requesterid":"227", "requestname":"updateMyPosition", "requestparameters" : "[\"userid\" : \"227\", \"wayid\":\"227\", \"currentlocation\" : \"17.4460204,78.3914782\", \"batterylevel\" : \"20\", \"accuracy\" : \"10\"]"] as Dictionary<String, String>
-//        
-//        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options:[])
-//        
-//        //request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
-//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.addValue("application/json", forHTTPHeaderField: "Accept")
-//        
-//        let task = session.dataTaskWithRequest(request, completionHandler: {
-//            data, response, error -> Void in
-//            print("Response: \(response)")})
-//        
-//        task.resume()
+    
         return true
     }
 

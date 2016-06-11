@@ -141,6 +141,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginAction:" destination="Zcf-Ba-E8W" eventType="touchUpInside" id="ih2-Rw-lRT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-5l-cBB">
                                 <rect key="frame" x="31" y="255" width="34" height="21"/>
@@ -207,6 +210,9 @@
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="txtMobileNumber" destination="9Ax-hc-d9x" id="iHe-9Q-Xbb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nF-Oo-Boy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

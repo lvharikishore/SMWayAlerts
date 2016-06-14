@@ -211,12 +211,85 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="lblRegistration" destination="h9G-21-5wu" id="dGq-3A-EG7"/>
                         <outlet property="txtMobileNumber" destination="9Ax-hc-d9x" id="iHe-9Q-Xbb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nF-Oo-Boy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="-939"/>
+            <point key="canvasLocation" x="-267" y="-1008"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="hsz-ZN-tXh">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jh8-fb-FJo" customClass="RegistrationViewController" customModule="WayAlerts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eey-WZ-wJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgs-Wj-1uA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B7p-mu-kdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ceE-oM-13E">
+                                <rect key="frame" x="225" y="59" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ci1-g1-YAg"/>
+                                    <constraint firstAttribute="height" constant="100" id="ITm-0V-pmW"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSJ-2v-XFL">
+                                <rect key="frame" x="0.0" y="15" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="New User Registration" id="MaD-0U-L4e">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Z4A-lp-95C">
+                                            <connections>
+                                                <action selector="btnCancelAction:" destination="jh8-fb-FJo" id="nKO-ez-sWQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTV-Js-c5j">
+                                <rect key="frame" x="20" y="167" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPw-YX-Fnv">
+                                <rect key="frame" x="20" y="205" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ceE-oM-13E" firstAttribute="top" secondItem="eey-WZ-wJJ" secondAttribute="bottom" constant="8" id="0QH-O2-D9G"/>
+                            <constraint firstItem="ceE-oM-13E" firstAttribute="top" secondItem="JSJ-2v-XFL" secondAttribute="bottom" id="6P7-CU-lxn"/>
+                            <constraint firstItem="WTV-Js-c5j" firstAttribute="leading" secondItem="B7p-mu-kdJ" secondAttribute="leading" constant="20" id="A9U-bZ-x9e"/>
+                            <constraint firstItem="JSJ-2v-XFL" firstAttribute="leading" secondItem="B7p-mu-kdJ" secondAttribute="leadingMargin" constant="-20" id="CaY-ti-3pl"/>
+                            <constraint firstItem="WTV-Js-c5j" firstAttribute="top" secondItem="ceE-oM-13E" secondAttribute="bottom" constant="8" id="Co8-jO-Phu"/>
+                            <constraint firstAttribute="trailing" secondItem="lPw-YX-Fnv" secondAttribute="trailing" constant="20" id="RFP-N5-glM"/>
+                            <constraint firstItem="ceE-oM-13E" firstAttribute="centerX" secondItem="B7p-mu-kdJ" secondAttribute="centerX" id="Rfi-AZ-rYu"/>
+                            <constraint firstItem="lPw-YX-Fnv" firstAttribute="leading" secondItem="B7p-mu-kdJ" secondAttribute="leading" constant="20" id="TAV-yQ-qXP"/>
+                            <constraint firstAttribute="trailing" secondItem="WTV-Js-c5j" secondAttribute="trailing" constant="20" id="TGt-8G-OhU"/>
+                            <constraint firstItem="ceE-oM-13E" firstAttribute="top" secondItem="eey-WZ-wJJ" secondAttribute="bottom" constant="8" id="X36-H8-sx8"/>
+                            <constraint firstItem="JSJ-2v-XFL" firstAttribute="top" secondItem="B7p-mu-kdJ" secondAttribute="topMargin" constant="15" id="X9c-X6-CjX"/>
+                            <constraint firstItem="lPw-YX-Fnv" firstAttribute="top" secondItem="WTV-Js-c5j" secondAttribute="bottom" constant="8" id="YPd-UY-WYM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JSJ-2v-XFL" secondAttribute="trailing" constant="-20" id="kUx-H5-haF"/>
+                            <constraint firstItem="ceE-oM-13E" firstAttribute="centerX" secondItem="B7p-mu-kdJ" secondAttribute="centerX" id="uf1-Zg-qDG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0QH-O2-D9G"/>
+                                <exclude reference="Rfi-AZ-rYu"/>
+                                <exclude reference="X36-H8-sx8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJo-cH-pG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="-1008"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

@@ -8,9 +8,21 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var txtMobileNumber: UITextField!
+    @IBOutlet weak var lblRegistration: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        lblRegistration.userInteractionEnabled = true
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(launchRegistrationScreen))
+        lblRegistration.addGestureRecognizer(tap)
+        tap.delegate = self
+
+    }
+    
     @IBAction func loginAction(sender: AnyObject) {
         DataController.sharedInstance.getOTP(mobile:txtMobileNumber.text!, success: { (data) in
             
@@ -26,5 +38,13 @@ class LoginViewController: UIViewController {
                 //print("error : \(error)")
                 AlertBox.sharedInstance.show(title: "Error", message: "\(error)", parentViewController: self)
         }
+    }
+    
+    func launchRegistrationScreen(gr:UITapGestureRecognizer) {
+        // user touch field
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("RegistrationViewController") 
+        self.presentViewController(vc, animated: true, completion: nil)
+        
     }
 }

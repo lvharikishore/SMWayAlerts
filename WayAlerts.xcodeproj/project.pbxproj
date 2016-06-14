@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770AF2DA1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */; };
+		770AF2DB1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */; };
+		770AF2DC1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */; };
 		774FEBD41D058562005D579F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD31D058562005D579F /* AppDelegate.swift */; };
 		774FEBD61D058562005D579F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD51D058562005D579F /* FirstViewController.swift */; };
 		774FEBD81D058562005D579F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD71D058562005D579F /* SecondViewController.swift */; };
@@ -58,6 +61,7 @@
 		02D126012D7F2F03C67D0D7B /* Pods-WayAlerts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WayAlerts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WayAlerts/Pods-WayAlerts.debug.xcconfig"; sourceTree = "<group>"; };
 		10AC60CF3754C09698D4CD7F /* Pods-WayAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WayAlerts.release.xcconfig"; path = "Pods/Target Support Files/Pods-WayAlerts/Pods-WayAlerts.release.xcconfig"; sourceTree = "<group>"; };
 		2076F129D89115D8BED2C5C0 /* libPods-WayAlerts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WayAlerts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		774FEBD01D058562005D579F /* WayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FEBD31D058562005D579F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774FEBD51D058562005D579F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		770AF2D81D0C3C2600F27D04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77807D7C1D083E8300A9067C /* LoginViewController.swift */,
+				770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		774FEBC71D058562005D579F = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 		774FEBD21D058562005D579F /* WayAlerts */ = {
 			isa = PBXGroup;
 			children = (
+				770AF2D81D0C3C2600F27D04 /* Controllers */,
 				776BDEA81D09AB6A00410807 /* Data */,
 				776BDEA71D09AA6C00410807 /* WANetwork */,
 				776BDEA01D09A77800410807 /* Constants */,
@@ -141,7 +155,6 @@
 				774FEBDC1D058563005D579F /* Assets.xcassets */,
 				774FEBDE1D058563005D579F /* LaunchScreen.storyboard */,
 				774FEBE11D058563005D579F /* Info.plist */,
-				77807D7C1D083E8300A9067C /* LoginViewController.swift */,
 			);
 			path = WayAlerts;
 			sourceTree = "<group>";
@@ -403,6 +416,7 @@
 				776BDEAE1D09ACA800410807 /* NetworkController.swift in Sources */,
 				776BDEAA1D09AC3A00410807 /* DataController.swift in Sources */,
 				774FEBD81D058562005D579F /* SecondViewController.swift in Sources */,
+				770AF2DA1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */,
 				774FEBD41D058562005D579F /* AppDelegate.swift in Sources */,
 				77807D771D081FC400A9067C /* AlertBox.swift in Sources */,
 				77807D7D1D083E8300A9067C /* LoginViewController.swift in Sources */,
@@ -418,6 +432,7 @@
 				776BDEAF1D09ACA800410807 /* NetworkController.swift in Sources */,
 				776BDEAB1D09AC3A00410807 /* DataController.swift in Sources */,
 				77807D7E1D083E8300A9067C /* LoginViewController.swift in Sources */,
+				770AF2DB1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */,
 				77807D7A1D08271100A9067C /* FirstViewController.swift in Sources */,
 				77807D781D081FC400A9067C /* AlertBox.swift in Sources */,
 				776BDE9E1D0952F200410807 /* AppDelegate.swift in Sources */,
@@ -433,6 +448,7 @@
 				776BDEB01D09ACA800410807 /* NetworkController.swift in Sources */,
 				776BDEAC1D09AC3A00410807 /* DataController.swift in Sources */,
 				77807D7F1D083E8300A9067C /* LoginViewController.swift in Sources */,
+				770AF2DC1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */,
 				77807D7B1D08271200A9067C /* FirstViewController.swift in Sources */,
 				77807D791D081FC400A9067C /* AlertBox.swift in Sources */,
 				776BDE9F1D0952F300410807 /* AppDelegate.swift in Sources */,

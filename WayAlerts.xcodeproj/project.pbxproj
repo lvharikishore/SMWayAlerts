@@ -37,6 +37,9 @@
 		77807D7D1D083E8300A9067C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77807D7C1D083E8300A9067C /* LoginViewController.swift */; };
 		77807D7E1D083E8300A9067C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77807D7C1D083E8300A9067C /* LoginViewController.swift */; };
 		77807D7F1D083E8300A9067C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77807D7C1D083E8300A9067C /* LoginViewController.swift */; };
+		77E753111D113D7400AF4B37 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E7530F1D113D7400AF4B37 /* Model.xcdatamodeld */; };
+		77E753121D113D7400AF4B37 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E7530F1D113D7400AF4B37 /* Model.xcdatamodeld */; };
+		77E753131D113D7400AF4B37 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E7530F1D113D7400AF4B37 /* Model.xcdatamodeld */; };
 		79805E5380812BA1B024D1C7 /* libPods-WayAlerts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2076F129D89115D8BED2C5C0 /* libPods-WayAlerts.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,7 @@
 		776BDEAD1D09ACA800410807 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Network/NetworkController.swift; sourceTree = "<group>"; };
 		77807D761D081FC400A9067C /* AlertBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertBox.swift; path = AlertBox/AlertBox.swift; sourceTree = SOURCE_ROOT; };
 		77807D7C1D083E8300A9067C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		77E753101D113D7400AF4B37 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +156,9 @@
 				774FEBD51D058562005D579F /* FirstViewController.swift */,
 				774FEBD71D058562005D579F /* SecondViewController.swift */,
 				774FEBD91D058563005D579F /* Main.storyboard */,
-				774FEBDC1D058563005D579F /* Assets.xcassets */,
 				774FEBDE1D058563005D579F /* LaunchScreen.storyboard */,
+				774FEBDC1D058563005D579F /* Assets.xcassets */,
+				77E7530F1D113D7400AF4B37 /* Model.xcdatamodeld */,
 				774FEBE11D058563005D579F /* Info.plist */,
 			);
 			path = WayAlerts;
@@ -420,6 +425,7 @@
 				774FEBD41D058562005D579F /* AppDelegate.swift in Sources */,
 				77807D771D081FC400A9067C /* AlertBox.swift in Sources */,
 				77807D7D1D083E8300A9067C /* LoginViewController.swift in Sources */,
+				77E753111D113D7400AF4B37 /* Model.xcdatamodeld in Sources */,
 				774FEBD61D058562005D579F /* FirstViewController.swift in Sources */,
 				776BDEA21D09A84D00410807 /* Constants.swift in Sources */,
 			);
@@ -436,6 +442,7 @@
 				77807D7A1D08271100A9067C /* FirstViewController.swift in Sources */,
 				77807D781D081FC400A9067C /* AlertBox.swift in Sources */,
 				776BDE9E1D0952F200410807 /* AppDelegate.swift in Sources */,
+				77E753121D113D7400AF4B37 /* Model.xcdatamodeld in Sources */,
 				774FEBEB1D058563005D579F /* WayAlertsTests.swift in Sources */,
 				776BDEA31D09A84D00410807 /* Constants.swift in Sources */,
 			);
@@ -452,6 +459,7 @@
 				77807D7B1D08271200A9067C /* FirstViewController.swift in Sources */,
 				77807D791D081FC400A9067C /* AlertBox.swift in Sources */,
 				776BDE9F1D0952F300410807 /* AppDelegate.swift in Sources */,
+				77E753131D113D7400AF4B37 /* Model.xcdatamodeld in Sources */,
 				774FEBF61D058563005D579F /* WayAlertsUITests.swift in Sources */,
 				776BDEA41D09A84D00410807 /* Constants.swift in Sources */,
 			);
@@ -687,6 +695,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77E7530F1D113D7400AF4B37 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77E753101D113D7400AF4B37 /* Model.xcdatamodel */,
+			);
+			currentVersion = 77E753101D113D7400AF4B37 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 774FEBC81D058562005D579F /* Project object */;
 }

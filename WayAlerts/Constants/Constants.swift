@@ -12,4 +12,5 @@ class Constants {
     
     static let googleMapsApiKey = "AIzaSyBsyZy8VXt_CJPi_zDrgRq1aOx0ITWvghM"
     static let waRequestURL = "http://syncminds.ddns.net/wayalerts_d_sm/api/requestprocessor/requestProcessing"
+    static let mobileNumberLimit = 10
 }

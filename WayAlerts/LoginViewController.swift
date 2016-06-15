@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UIGestureRecognizerDelegate {
+class LoginViewController: UIViewController, UIGestureRecognizerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var txtMobileNumber: UITextField!
     @IBOutlet weak var lblRegistration: UILabel!
@@ -20,7 +20,7 @@ class LoginViewController: UIViewController, UIGestureRecognizerDelegate {
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(launchRegistrationScreen))
         lblRegistration.addGestureRecognizer(tap)
         tap.delegate = self
-
+        self.txtMobileNumber.delegate = self
     }
     
     @IBAction func loginAction(sender: AnyObject) {
@@ -46,5 +46,12 @@ class LoginViewController: UIViewController, UIGestureRecognizerDelegate {
         let vc = storyboard.instantiateViewControllerWithIdentifier("RegistrationViewController") 
         self.presentViewController(vc, animated: true, completion: nil)
         
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
+        
+        let newLength = text.characters.count + string.characters.count - range.length
+        return newLength <= Constants.mobileNumberLimit
     }
 }

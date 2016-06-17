@@ -10,15 +10,20 @@ import UIKit
 
 class AlertBox: NSObject {
 
-    static let sharedInstance = AlertBox()
+    static let singleTon = AlertBox()
     
     //var title : String
     //var message : String
     
-//    override init() {
-//        title = "Error"
-//        message = "Error Message"
-//    }
+    override private init() {
+        //title = "Error"
+        //message = "Error Message"
+        super.init()
+    }
+    
+    static func shareInstance() -> AlertBox {
+    return singleTon
+    }
     
 //    init () {
 //        self.title = titleString

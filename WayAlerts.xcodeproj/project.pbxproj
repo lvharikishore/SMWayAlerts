@@ -10,6 +10,9 @@
 		770AF2DA1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */; };
 		770AF2DB1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */; };
 		770AF2DC1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */; };
+		770BC51D1D20481100C4DE1E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BC51C1D20481100C4DE1E /* WebViewController.swift */; };
+		770BC51E1D20481100C4DE1E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BC51C1D20481100C4DE1E /* WebViewController.swift */; };
+		770BC51F1D20481100C4DE1E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BC51C1D20481100C4DE1E /* WebViewController.swift */; };
 		774FEBD41D058562005D579F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD31D058562005D579F /* AppDelegate.swift */; };
 		774FEBD61D058562005D579F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD51D058562005D579F /* FirstViewController.swift */; };
 		774FEBD81D058562005D579F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FEBD71D058562005D579F /* SecondViewController.swift */; };
@@ -65,6 +68,7 @@
 		10AC60CF3754C09698D4CD7F /* Pods-WayAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WayAlerts.release.xcconfig"; path = "Pods/Target Support Files/Pods-WayAlerts/Pods-WayAlerts.release.xcconfig"; sourceTree = "<group>"; };
 		2076F129D89115D8BED2C5C0 /* libPods-WayAlerts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WayAlerts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		770BC51C1D20481100C4DE1E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		774FEBD01D058562005D579F /* WayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FEBD31D058562005D579F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774FEBD51D058562005D579F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -116,10 +120,27 @@
 		770AF2D81D0C3C2600F27D04 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				770BC51A1D2038D600C4DE1E /* webView */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		770BC51A1D2038D600C4DE1E /* webView */ = {
+			isa = PBXGroup;
+			children = (
+				770BC51C1D20481100C4DE1E /* WebViewController.swift */,
+				770BC51B1D2038E100C4DE1E /* Login */,
+			);
+			name = webView;
+			sourceTree = "<group>";
+		};
+		770BC51B1D2038E100C4DE1E /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				77807D7C1D083E8300A9067C /* LoginViewController.swift */,
 				770AF2D91D0C3E5500F27D04 /* RegistrationViewController.swift */,
 			);
-			name = Controllers;
+			name = Login;
 			sourceTree = "<group>";
 		};
 		774FEBC71D058562005D579F = {
@@ -419,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776BDEAE1D09ACA800410807 /* NetworkController.swift in Sources */,
+				770BC51D1D20481100C4DE1E /* WebViewController.swift in Sources */,
 				776BDEAA1D09AC3A00410807 /* DataController.swift in Sources */,
 				774FEBD81D058562005D579F /* SecondViewController.swift in Sources */,
 				770AF2DA1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */,
@@ -436,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776BDEAF1D09ACA800410807 /* NetworkController.swift in Sources */,
+				770BC51E1D20481100C4DE1E /* WebViewController.swift in Sources */,
 				776BDEAB1D09AC3A00410807 /* DataController.swift in Sources */,
 				77807D7E1D083E8300A9067C /* LoginViewController.swift in Sources */,
 				770AF2DB1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */,
@@ -453,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776BDEB01D09ACA800410807 /* NetworkController.swift in Sources */,
+				770BC51F1D20481100C4DE1E /* WebViewController.swift in Sources */,
 				776BDEAC1D09AC3A00410807 /* DataController.swift in Sources */,
 				77807D7F1D083E8300A9067C /* LoginViewController.swift in Sources */,
 				770AF2DC1D0C3E5500F27D04 /* RegistrationViewController.swift in Sources */,

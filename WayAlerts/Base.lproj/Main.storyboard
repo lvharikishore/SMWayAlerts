@@ -344,6 +344,9 @@
                                         <exclude reference="Qg1-hN-o2e"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="submitAction:" destination="jh8-fb-FJo" eventType="touchUpInside" id="TGd-dI-ntb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -405,8 +408,8 @@
                                 <exclude reference="MaV-Ph-e5D"/>
                                 <exclude reference="X8A-jn-JTF"/>
                                 <exclude reference="w9C-gX-f0E"/>
-                                <exclude reference="1lb-Yc-YzF"/>
                                 <exclude reference="urg-ek-DJz"/>
+                                <exclude reference="1lb-Yc-YzF"/>
                             </mask>
                         </variation>
                     </view>
@@ -419,6 +422,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJo-cH-pG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="358" y="-1008"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="6ex-YB-KAb">
+            <objects>
+                <viewController storyboardIdentifier="webView" title="WebView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OW1-UD-Dvm" customClass="WebViewController" customModule="WayAlerts" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="sUG-LA-q9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                    <connections>
+                        <outlet property="webView" destination="sUG-LA-q9Q" id="6ah-3s-R6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJm-1b-UAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="-1008"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

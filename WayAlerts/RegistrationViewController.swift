@@ -57,6 +57,10 @@ class RegistrationViewController: UIViewController, UIGestureRecognizerDelegate,
     func termsAndConditionsClickAction(gr:UITapGestureRecognizer) {
         // user touch field
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("webView") as! UIViewController
+        self.presentViewController(vc, animated: true, completion: nil)
+        
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -66,5 +70,8 @@ class RegistrationViewController: UIViewController, UIGestureRecognizerDelegate,
         return newLength <= Constants.mobileNumberLimit
     }
     
+    @IBAction func submitAction(sender: AnyObject) {
+        
+    }
 
 }
